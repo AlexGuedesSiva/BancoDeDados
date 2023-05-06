@@ -1,6 +1,5 @@
-SELECT * FROM estados;
 
--- Creiando a tabela estado!
+-- Criando a tabela estado!
 CREATE TABLE estados (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     nome VARCHAR(45) NOT NULL,
