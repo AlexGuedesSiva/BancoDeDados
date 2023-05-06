@@ -66,6 +66,8 @@ O comando SQL DROP apaga um View. Sinônimo de excluir, a palavra ‘DROPAR’ �
 
 1. DROP View nome_view 
 <br>
+
+
 Quadro 2.5 – Exclusão de View<br>
 
 Importante: o comando DROP possui duas opções: RESTRICT e CASCADE. No uso da palavra RESTRICIT, ao apagar uma View (DROP VIEW) e qualquer outra visualização for referenciada à restrição, o comando DROP gera um erro. Ao contrário, no uso do comando DROP VIEW com a opção CASCADE, a instrução é executada com sucesso.
@@ -75,6 +77,8 @@ As Views criadas e armazenadas num banco de dados podem ser chamadas ou invocada
 
 1. SELECT * FROM nome_View
 <br>
+
+
 Quadro 2.6 - Chamando view <br>
 
 
