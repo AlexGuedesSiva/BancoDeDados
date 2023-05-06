@@ -13,8 +13,6 @@ Virtualizações são criadas com o comando de instrução DDL (Data Definition 
 Quadro 2.1 - Criando View
 <br>
 
-<h3>Fonte: Elaborado pelo autor</h3>
-
 
 Na linha um, há o comando DDL de criação da View e o nome atribuído a essa visão. Na linha dois, há a palavra reservada AS (como), a linha três representa a instrução SQL SELECT em si. Views podem ser exploradas de diferentes maneiras. Esse processo dependerá da necessidade da visualização do negócio.
 
@@ -30,7 +28,6 @@ O código do Quadro 2.2 apresenta uma simples consulta a uma tabela intitulada c
 3. SELECT * FROM aluno;
 <br>
 Quadro 2.2 - Consulta múltiplas
-<h3> Fonte: Elaborado pelo autor </h3>
 
 Mas podem ser, também, extraídos dados de uma ou mais tabelas e apresentados no Quadro 3. Nesse script, a consulta está sendo realizada em duas tabelas: a tabela de empregado e a tabela de pagamento de empregados.
 
@@ -48,8 +45,9 @@ Mas podem ser, também, extraídos dados de uma ou mais tabelas e apresentados n
 
 7. E.emp_id = P.emp_id;
 <br>
+
+
 Quadro 2.3 – Consulta a múltiplas tabelas<br>
-<h3>Fonte: Elaborado pelo autor. </h3>
 
 Uma virtualização pode ser criada com base em outras visualizações, por meio de uma instrução SQL e a sua sintaxe apresentada no Quadro 2.4:
 
@@ -60,7 +58,6 @@ Uma virtualização pode ser criada com base em outras visualizações, por meio
 3. SELECT * FROM VIEW
 <br>
 Quadro 2.4 – Views de Views <br>
-<h3>Fonte: Elaborado pelo autor.</h3>
 
 Não crie visualizações com muita profundidade, porque pode afetar a gerenciabilidade das visualizações, pois esse problema é decorrente do cascateamento de Views. Por exemplo, suponha que você tenha uma View2, baseada numa View1 e uma terceira View3 cujas informações foram extraídas da View2. Caso a primeira View seja excluída, as visualizações 2 e 3 não servirão mais, porquanto as dependências relativas a View1 estarão destruídas.
 
@@ -70,7 +67,6 @@ O comando SQL DROP apaga um View. Sinônimo de excluir, a palavra ‘DROPAR’ �
 1. DROP View nome_view 
 <br>
 Quadro 2.5 – Exclusão de View<br>
-<h3>Fonte: Elaborado pelo autor.</h3>
 
 Importante: o comando DROP possui duas opções: RESTRICT e CASCADE. No uso da palavra RESTRICIT, ao apagar uma View (DROP VIEW) e qualquer outra visualização for referenciada à restrição, o comando DROP gera um erro. Ao contrário, no uso do comando DROP VIEW com a opção CASCADE, a instrução é executada com sucesso.
 
@@ -80,7 +76,6 @@ As Views criadas e armazenadas num banco de dados podem ser chamadas ou invocada
 1. SELECT * FROM nome_View
 <br>
 Quadro 2.6 - Chamando view <br>
-<h2> Fonte: Elaborado pelo autor.</h2>
 
 
 A cláusula de filtro como WHERE pode ser usada na chamada de uma View, porém, para melhor desempenho, a sugestão é usar a cláusula nas instruções SELECT que formam a VIEW (PLEW; STEPHENS, 2000).
