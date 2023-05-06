@@ -28,7 +28,6 @@ O código do Quadro 2.2 apresenta uma simples consulta a uma tabela intitulada c
 3. SELECT * FROM aluno;
 <br>
 Quadro 2.2 - Consulta múltiplas
-<h3> Fonte: Elaborado pelo autor </h3>
 
 Mas podem ser, também, extraídos dados de uma ou mais tabelas e apresentados no Quadro 3. Nesse script, a consulta está sendo realizada em duas tabelas: a tabela de empregado e a tabela de pagamento de empregados.
 
@@ -59,7 +58,6 @@ Uma virtualização pode ser criada com base em outras visualizações, por meio
 3. SELECT * FROM VIEW
 <br>
 Quadro 2.4 – Views de Views <br>
-<h3>Fonte: Elaborado pelo autor.</h3>
 
 Não crie visualizações com muita profundidade, porque pode afetar a gerenciabilidade das visualizações, pois esse problema é decorrente do cascateamento de Views. Por exemplo, suponha que você tenha uma View2, baseada numa View1 e uma terceira View3 cujas informações foram extraídas da View2. Caso a primeira View seja excluída, as visualizações 2 e 3 não servirão mais, porquanto as dependências relativas a View1 estarão destruídas.
 
