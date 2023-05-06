@@ -1,3 +1,4 @@
+
 <h1> Procedure </h1><br>
 Em <strong>SQL</strong>, um procedure é um bloco de código SQL que é armazenado no banco de dados e pode ser chamado repetidamente. Ele pode aceitar parâmetros de entrada e retornar resultados.
 

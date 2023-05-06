@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <h1>Functions</h1>
 
 
@@ -181,4 +181,4 @@ envio de mensagens aos usuários de um banco de dados;
 produção de dados complexos, que dependem da interação de diversos elementos do banco de dados;
 obtenção de dados contextuais, tais como: data, hora, dia da semana etc.
 Além dos procedimentos armazenados no banco de dados ( functions e procedures ), gatilhos ( trigger ) estão muito associados a regras de negócio. São também armazenados como objetos do banco de dados e considerados outro recurso importante. Esse é o tema do nosso próximo tópico de estudo.
->>>>>>> fa0d32f36d3e2054436390f37e18761e6dde2535
+
